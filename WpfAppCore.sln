@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppCore", "WpfAppCore\WpfAppCore.csproj", "{5B149F1F-24AF-47B1-8527-1E2528A4CA4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{189ED46F-F7B0-49C9-A667-A510F8282AEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTests", "DataTests\DataTests.csproj", "{D7FA487F-2B12-44D5-8D2B-145E3FD67DE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B149F1F-24AF-47B1-8527-1E2528A4CA4F}.Debug|x64.ActiveCfg = Debug|x64
+		{5B149F1F-24AF-47B1-8527-1E2528A4CA4F}.Debug|x64.Build.0 = Debug|x64
+		{5B149F1F-24AF-47B1-8527-1E2528A4CA4F}.Release|x64.ActiveCfg = Release|x64
+		{5B149F1F-24AF-47B1-8527-1E2528A4CA4F}.Release|x64.Build.0 = Release|x64
+		{189ED46F-F7B0-49C9-A667-A510F8282AEE}.Debug|x64.ActiveCfg = Debug|x64
+		{189ED46F-F7B0-49C9-A667-A510F8282AEE}.Debug|x64.Build.0 = Debug|x64
+		{189ED46F-F7B0-49C9-A667-A510F8282AEE}.Release|x64.ActiveCfg = Release|x64
+		{189ED46F-F7B0-49C9-A667-A510F8282AEE}.Release|x64.Build.0 = Release|x64
+		{D7FA487F-2B12-44D5-8D2B-145E3FD67DE1}.Debug|x64.ActiveCfg = Debug|x64
+		{D7FA487F-2B12-44D5-8D2B-145E3FD67DE1}.Debug|x64.Build.0 = Debug|x64
+		{D7FA487F-2B12-44D5-8D2B-145E3FD67DE1}.Release|x64.ActiveCfg = Release|x64
+		{D7FA487F-2B12-44D5-8D2B-145E3FD67DE1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB5E94CD-78A2-41A4-90A7-7B65F2B3129D}
+	EndGlobalSection
+EndGlobal
