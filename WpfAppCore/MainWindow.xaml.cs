@@ -1,12 +1,6 @@
-﻿
-using System;
+﻿using Data.Models;
 using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.Configuration;
-using System.Diagnostics;
-using System.Linq;
 using System.Windows;
-using Data.Models;
 
 namespace WpfAppCore
 {
@@ -18,13 +12,11 @@ namespace WpfAppCore
         public MainWindow()
         {
             var connStr = ConnectionFactory.GetConnectionString();
-            //var connectionString = @"Data Source=C:\Users\sylwia\source\repos\WpfAppCore\WpfAppCore\chinook.db";
             Artists = Data.Collection.GetArtists(connStr);
-            var artist = new ArtistModel() { ArtistId = 1, Name = "Pawel" };
+            var artist = new ArtistModel() { ArtistId = 1, Name = "New Artists" };
             Artists.Add(artist);
 
             InitializeComponent();
-
 
         }
 

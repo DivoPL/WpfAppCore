@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
+using System.Reflection;
 using System.Text;
 
 namespace WpfAppCore
@@ -9,7 +11,14 @@ namespace WpfAppCore
     {
         public static string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["sqlite"].ConnectionString;
+            var dbFilePath = Directory.GetCurrentDirectory();
+            var executingAssemblyLocation = Assembly.GetExecutingAssembly().Location;
+            var appSettingsSection = ConfigurationManager.OpenExeConfiguration(executingAssemblyLocation).AppSettings;
+            var connectionStringsSection = ConfigurationManager.OpenExeConfiguration(executingAssemblyLocation).ConnectionStrings;
+
+            var dbFileName = connectionStringsSection.ConnectionStrings["chinook"].ConnectionString;
+            
+            return $@"Data Source={dbFilePath}\{dbFileName}";
         }
         
     }

@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Data;
 using WpfAppCore;
+using System.IO;
 
 namespace DataTests
 {
@@ -18,7 +19,7 @@ namespace DataTests
         [TestMethod]
         public void GetArtistsTest()
         {
-            var connectionString = @"Data Source=C:\Users\sylwia\source\repos\WpfAppCore\WpfAppCore\chinook.db";
+            var connectionString = $@"Data Source={Directory.GetCurrentDirectory()}\chinook.db";
             var artists = Collection.GetArtists(connectionString);
 
             Assert.IsTrue(artists.Count > 0);
